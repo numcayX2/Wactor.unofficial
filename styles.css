@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+}
+
+.menu {
+    background: rgb(199, 255, 249);
+    display: flex;
+    border-bottom: 3px solid rgb(0, 201, 177);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 10;
+    padding: 3px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu img {
+    width: auto;
+    height: 50px;
+    padding: 0px 30px 0px 5px;
+}
+
+.menu ul li {
+    list-style: none;
+    height: 50px;
+    line-height: 65px;
+}
+
+.menu ul li .in-menu {
+    position: absolute;
+    cursor: pointer;
+    transition: .15s;
+    padding: 0px 5px;
+    border-radius: 15px;
+    color: black;
+}
+
+.menu ul li #discord-menu {
+    margin-left: 90px;
+    text-decoration: none;
+}
+
+.menu ul li .in-menu:hover {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    color: rgb(0, 201, 177);
+    animation-name: menuanimation;
+    animation-duration: .1s;
+    animation-iteration-count: 2;
+}
+
+@keyframes menuanimation {
+    0% {transform: rotate(5deg);}
+    25% {transform: rotate(0deg);}
+    50% {transform: rotate(-5deg);}
+    75% {transform: rotate(0deg);}
+    100% {transform: rotate(5deg);}
+}
+
+.menu .member-box {
+    position: fixed;
+    top: -2000px;
+    margin: auto;
+    width: 80%;
+    background: rgba(99, 255, 247, 0.2);
+    box-shadow: rgba(14, 30, 37, 0.5) 0px 2px 4px 0px, rgba(14, 30, 37, 0.5) 0px 2px 16px 0px;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    left: 25px;
+    transition: .4s ease;
+    z-index: 1;
+}
+
+.menu .member-box .row .col h5 {
+    margin: 15px 50px;
+    color:rgb(0, 201, 177);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.menu .member-box .row .col a {
+    color: black;
+    font-weight: bold;
+    padding-right: 25%;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.menu .member-box .row .col a:hover {
+    border-left: 3px solid rgb(0, 201, 177);
+    padding-left: 5px;
+}
+
+/*Member Box Active*/
+.menu .member-box-active {
+    position: fixed;
+    top: 90px;
+    margin: auto;
+    width: 80%;
+    background: rgba(99, 255, 247, 0.2);
+    box-shadow: rgba(14, 30, 37, 0.5) 0px 2px 4px 0px, rgba(14, 30, 37, 0.5) 0px 2px 16px 0px;
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 25px;
+    left: 25px;
+    z-index: 1;
+}
+
+.menu .member-box-active .row .col h5 {
+    margin: 15px 50px;
+    color:rgb(0, 201, 177);
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.menu .member-box-active .row .col a {
+    color: black;
+    font-weight: bold;
+    padding-right: 25%;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.menu .member-box-active .row .col a:hover {
+    border-left: 3px solid rgb(0, 201, 177);
+    padding-left: 5px;
+}
