@@ -105,6 +105,7 @@ body {
 .menu .member-box .row .col a:hover {
     border-left: 3px solid rgb(0, 201, 177);
     padding-left: 5px;
+    font-family: 'kanit',sans-serif;
 }
 
 /*Member Box Active*/
