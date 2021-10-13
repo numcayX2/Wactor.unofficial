@@ -126,3 +126,84 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+
+/*Intro*/
+.intro {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9000;/*LMAO*/
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    transition: 1s ease;
+}
+
+.intro .img-intro {
+    transition: .2s;
+}
+
+.logo-header {
+    position: relative;
+    font-weight: bolder;
+    color: rgb(0, 201, 177);
+    text-shadow: 2px 2px rgba(0, 201, 177, 0.5);
+    z-index: 9000;
+}
+
+.logo-button {
+    position: relative;
+    z-index: 9000;
+}
+
+.intro-content {
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    transform: translate( -50%, -50%)
+}
+
+.intro-logo {
+    height: 130px;
+    width: auto;
+}
+
+.intro-content, .logo-header, .logo-button {
+    margin:0 0 40px 0;
+}
+
+/*Intro Button*/
+.intro-button {
+    border: none;
+    padding: 10px 35px;
+    border-radius: 5px;
+}
+
+.intro-button:focus {
+    outline: none;
+}
+
+/*intro active*/
+.intro.out {
+    transition: 1s;
+    background: rgb(0, 201, 177);
+}
+
+.intro.out .intro-button {
+    transition: .5s;
+    background: rgb(0, 201, 177);
+    color: rgb(0, 201, 177);
+}
+
+.intro.out .intro-logo {
+    animation-name: intro-logo;
+    animation-duration: .07s;
+    animation-iteration-count: 1000;
+}
+    
+@keyframes intro-logo {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
