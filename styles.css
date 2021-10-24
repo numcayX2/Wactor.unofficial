@@ -48,8 +48,18 @@ body {
     color: black;
 }
 
+.menu ul li #member-menu {
+    margin-left: 0px;
+    text-decoration: none;
+}
+
 .menu ul li #discord-menu {
     margin-left: 90px;
+    text-decoration: none;
+}
+
+.menu ul li #wactorweb-menu {
+    margin-left: 165px;
     text-decoration: none;
 }
 
@@ -81,7 +91,8 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 25px;
-    left: 25px;
+    left: 50%;
+    transform: translateX(-50%);
     transition: .4s ease;
     z-index: 0;
 }
@@ -97,7 +108,8 @@ body {
     backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 25px;
-    left: 25px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1;
 }
 
@@ -206,4 +218,43 @@ body {
 @keyframes intro-logo {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
+}
+
+#mainwactor {
+    margin-top: 75px;
+}
+
+#mainwactor h1 {
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 5px;
+    font-size: 52px;
+}
+
+#mainwactor p{
+    text-align: center;
+    position: relative;
+    bottom: 15px;
+}
+
+.mainwactor-img {
+    margin-top: 15px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 10rem;
+    height: auto;
+}
+
+.background,.A2021,.A2020,.A2019 {
+    margin: 25px 10px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/*Responsive web*/
+@media screen and (max-width: 800px) {
+    #logo {
+        content: url(http://127.0.0.1:5500/picture/Wactor_Logo_NOBG.png);
+    }
 }
