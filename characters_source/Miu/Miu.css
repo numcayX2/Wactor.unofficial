@@ -70,7 +70,7 @@ body {
     text-align: center;
 }
 
-#Miu-personality,#Miu-profile,#Miu-channel {
+#Miu-personality,#Miu-profile,#Miu-channel,#ref {
     margin: 10px 0;
     background: #fff;
     border-radius: 10px;
@@ -96,6 +96,11 @@ body {
 
 #Miu-channel {
     padding: 15px;
+}
+
+#ref h3, h4 a {
+    padding: 15px;
+    font-size: 14px;
 }
 /*!!!!Padding content!!!!*/
 
@@ -130,11 +135,10 @@ body {
 }
 
 #media-youtube,#media-twitter,#media-bilibili,#media-twitch,#media-twitcasting,#media-marshmallow,#media-ci {
-    position: absolute;
-    height: 75px;
-    width: 75px;
+    height: 45px;
+    width: 45px;
     overflow: hidden;
-    transform: translateX(-75%);
+    transform: translateX(15%);
     border-radius: 50%;
-    opacity: 0;
+    opacity: 1;
 }
