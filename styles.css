@@ -257,4 +257,20 @@ body {
     #logo {
         content: url(http://127.0.0.1:5500/picture/Wactor_Logo_NOBG.png);
     }
+
+    .menu ul li .in-menu:hover {
+        background: none;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 0.0) 0px 4px 12px;
+        color: black;
+    }
+    
+    @keyframes menuanimation {
+        0% {transform: rotate(0deg);}
+        100% {transform: rotate(0deg);}
+    }
+
+    .menu ul li #wactorweb-menu {
+        opacity: 0;
+    }
 }
